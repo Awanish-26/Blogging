@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload Form</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="">
+        <h1>All Notes</h1>
+        <ul>
+            {% for note in notes %}
+                <li>
+                    <a href="{{ url_for('render_markdown', filename=note) }}">{{ note }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul>
+                {% for category, message in messages %}
+                    <li><strong>{{ category.capitalize() }}:</strong> {{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        {% endwith %}
+    </div>
+    <div class="">
+        <a href="/upload">add note + </a>
+    </div>
+</body>
+</html>
