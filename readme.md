@@ -1,14 +1,14 @@
-# Blogging Project
+## Blogging
 
-This project is a simple blogging platform built with Python. It allows users to create, edit, and delete blog posts. The platform also supports user authentication and authorization.
+(Project Idea LINK) [https://roadmap.sh/projects/markdown-note-taking-app]
 
 ## Features
+- an endpoint to check the grammar of the note.
+- an endpoint to save the note that can be passed in as Markdown text.
+- an endpoint to list the saved notes (i.e. uploaded markdown files).
+- Return the HTML version of the Markdown note (rendered note) through another endpoint.
 
-- User authentication and authorization
-- Create, edit, and delete blog posts
-- Responsive design
-- Markdown support for blog posts
-
+  
 ## Installation
 
 1. Clone the repository:
@@ -32,14 +32,3 @@ This project is a simple blogging platform built with Python. It allows users to
    ```
 2. Open your web browser and go to `http://localhost:8000`.
 
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any questions or feedback, please contact [your-email@example.com](mailto:your-email@example.com).
